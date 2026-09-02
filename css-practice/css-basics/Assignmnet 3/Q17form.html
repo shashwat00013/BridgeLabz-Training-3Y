@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <h1>Simple Form</h1>
+
+    <form action="result.html" target="result-frame">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <!-- Result page will be loaded inside this iframe after clicking Submit -->
+    <iframe
+        name="result-frame"
+        title="Form Result"
+        width="50%"
+        height="100">
+    </iframe>
+
+</body>
+</html>
