@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Plans</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f1117;
+    color: #e6e6e6;
+    padding: 4rem 1.5rem;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    color: #fff;
+  }
+
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .plan {
+    background-color: #161a23;
+    border: 1px solid #262a35;
+    border-radius: 14px;
+    flex: 1 1 280px;
+    max-width: 300px;
+    padding: 2.5rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+  }
+
+  .plan:hover {
+    transform: scale(1.05);
+    background-color: #1c2130;
+  }
+
+  .plan h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+
+  .plan .price {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin: 1rem 0;
+    color: #7cc7ff;
+  }
+
+  .plan .price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #8b8f9c;
+  }
+
+  .plan ul {
+    list-style: none;
+    margin: 1.5rem 0;
+    flex-grow: 1;
+  }
+
+  .plan ul li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #262a35;
+    color: #c7c9d1;
+    font-size: 0.95rem;
+  }
+
+  .plan a.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #262a35;
+    color: #fff;
+    padding: 0.9rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+  }
+
+  .plan a.btn:hover {
+    background-color: #333949;
+  }
+
+  /* Most popular plan highlight */
+  .plan.popular {
+    border: 2px solid #ffcf85;
+    position: relative;
+  }
+
+  .plan.popular::before {
+    content: "Most Popular";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffcf85;
+    color: #1a1a1a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    border-radius: 999px;
+  }
+
+  .plan.popular a.btn {
+    background-color: #ffcf85;
+    color: #1a1a1a;
+  }
+
+  .plan.popular a.btn:hover {
+    background-color: #ffd89e;
+  }
+</style>
+</head>
+<body>
+
+<h1>Choose Your Plan</h1>
+
+<div class="pricing-container">
+
+  <div class="plan">
+    <h2>Basic</h2>
+    <div class="price">₹499<span>/mo</span></div>
+    <ul>
+      <li>1 Project</li>
+      <li>5GB Storage</li>
+      <li>Email Support</li>
+      <li>Basic Analytics</li>
+    </ul>
+    <a href="#" class="btn">Get Started</a>
+  </div>
+
+  <div class="plan popular">
+    <h2>Standard</h2>
+    <div class="price">₹999<span>/mo</span></div>
+    <ul>
+      <li>5 Projects</li>
+      <li>50GB Storage</li>
+      <li>Priority Support</li>
+      <li>Advanced Analytics</li>
+      <li>Team Collaboration</li>
+    </ul>
+    <a href="#" class="btn">Get Started</a>
+  </div>
+
+  <div class="plan">
+    <h2>Premium</h2>
+    <div class="price">₹1999<span>/mo</span></div>
+    <ul>
+      <li>Unlimited Projects</li>
+      <li>500GB Storage</li>
+      <li>24/7 Support</li>
+      <li>Custom Analytics</li>
+      <li>API Access</li>
+    </ul>
+    <a href="#" class="btn">Get Started</a>
+  </div>
+
+</div>
+
+</body>
+</html>

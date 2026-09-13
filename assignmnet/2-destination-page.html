@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Favorite Destination — Jaipur</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #fdf6ec;
+    color: #2b2b2b;
+  }
+
+  header {
+    background-color: #7a1f1f;
+    color: #fdf6ec;
+    padding: 1.5rem 2rem;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  nav {
+    background-color: #5c1616;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0.9rem 0;
+  }
+
+  nav a {
+    color: #f4e0c8;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  nav a:hover {
+    color: #ffcf85;
+  }
+
+  main section {
+    width: 100%;
+    padding: 5rem 2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+
+  /* Section 1: intro with linear gradient */
+  #intro {
+    background: linear-gradient(135deg, #7a1f1f 0%, #d97757 100%);
+    color: #fff;
+    text-align: center;
+  }
+
+  #intro h2 {
+    font-size: 2.6rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+  }
+
+  #intro p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+
+  /* Section 2: parallax fixed background with radial gradient overlay */
+  #forts {
+    background-image:
+      radial-gradient(circle at top left, rgba(122,31,31,0.85), rgba(20,10,10,0.9)),
+      url('https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1600');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fdf6ec;
+    padding: 6rem 2rem;
+  }
+
+  #forts h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-left: 5px solid #ffcf85;
+    padding-left: 1rem;
+  }
+
+  #forts p {
+    max-width: 65ch;
+    line-height: 1.8em;
+    font-size: 1.05rem;
+    margin-top: 1rem;
+  }
+
+  /* Section 3: markets, solid color with box spacing */
+  #markets {
+    background-color: #f4e0c8;
+    padding: 4rem 2rem;
+  }
+
+  #markets h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #5c1616;
+  }
+
+  .market-grid {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .market-card {
+    background: #fff;
+    padding: 1.5rem;
+    border: 1px solid #e2c9a0;
+    border-radius: 8px;
+    flex: 1 1 220px;
+  }
+
+  .market-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #7a1f1f;
+  }
+
+  /* Section 4: another parallax fixed with different image */
+  #food {
+    background-image:
+      radial-gradient(circle at bottom right, rgba(90,20,20,0.85), rgba(10,5,5,0.92)),
+      url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1600');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fdf6ec;
+    text-align: center;
+  }
+
+  #food h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  #food p {
+    max-width: 60ch;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8em;
+  }
+
+  footer {
+    background-color: #2b1010;
+    color: #cfa;
+    color: #f4e0c8;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Jaipur — The Pink City</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#intro">Home</a></li>
+    <li><a href="#forts">Forts</a></li>
+    <li><a href="#markets">Markets</a></li>
+    <li><a href="#food">Food</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="intro">
+    <h2>Welcome to Jaipur</h2>
+    <p>A city of royal palaces, rugged forts, and a skyline painted in shades of terracotta pink — my favorite destination in India.</p>
+  </section>
+
+  <section id="forts">
+    <h2>Majestic Forts</h2>
+    <p>
+      From the hilltop grandeur of Amber Fort to the imposing walls of Nahargarh, Jaipur's forts
+      tell stories of Rajput valor. Walking through their courtyards at sunset, with the city
+      sprawled below, is an experience that stays with you long after you leave.
+    </p>
+  </section>
+
+  <section id="markets">
+    <h2>Vibrant Markets</h2>
+    <div class="market-grid">
+      <div class="market-card">
+        <h3>Johari Bazaar</h3>
+        <p>Famous for traditional Rajasthani jewelry and gemstones.</p>
+      </div>
+      <div class="market-card">
+        <h3>Bapu Bazaar</h3>
+        <p>The place for textiles, juttis, and colorful handicrafts.</p>
+      </div>
+      <div class="market-card">
+        <h3>Chandpole Bazaar</h3>
+        <p>Known for marble idols and traditional artwork.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="food">
+    <h2>Local Flavors</h2>
+    <p>
+      No visit is complete without dal-baati-churma, pyaaz kachori, and a glass of cold lassi
+      from a century-old shop tucked inside the old city walls.
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2026 — A Tribute to Jaipur
+</footer>
+
+</body>
+</html>
