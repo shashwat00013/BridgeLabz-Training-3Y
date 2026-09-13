@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f6f8;
+  color: #22262b;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #22262b;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input, textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 10px 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  resize: vertical;
+  /* default outline removed so our custom outline shows cleanly on focus */
+  outline: none;
+}
+
+/* Different default outline styles per field, shown on focus */
+.outline-solid:focus {
+  outline: 3px solid #4fd1c5;
+  outline-offset: 2px;
+}
+
+.outline-dashed:focus {
+  outline: 3px dashed #f2994a;
+  outline-offset: 4px;
+}
+
+.outline-dotted:focus {
+  outline: 3px dotted #9b5de5;
+  outline-offset: 3px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #22262b;
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #383f47;
+}

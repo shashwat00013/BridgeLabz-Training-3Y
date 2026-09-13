@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f6f8;
+  color: #22262b;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #22262b;
+  color: #fff;
+}
+
+/* Flexbox centers all boxes both vertically and horizontally */
+.stage {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  min-height: 80vh;
+  padding: 30px;
+}
+
+.box {
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+}
+
+/* Fixed pixel size */
+.box-px {
+  width: 200px;
+  height: 150px;
+  background: #4fd1c5;
+}
+
+/* Percentage width with a min-height floor */
+.box-percent {
+  width: 40%;
+  min-height: 120px;
+  background: #f2994a;
+}
+
+/* Viewport height unit, capped max-width, scroll if content overflows */
+.box-vh {
+  height: 30vh;
+  max-width: 250px;
+  background: #9b5de5;
+  overflow: auto;
+}
+
+.overflow-note {
+  display: block;
+  margin-top: 8px;
+}
+
+/* em units scale with font-size */
+.box-em {
+  width: 20em;
+  height: 8em;
+  background: #22262b;
+}

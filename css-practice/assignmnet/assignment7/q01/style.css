@@ -1,0 +1,54 @@
+/* Reset box-sizing so padding doesn't affect our fixed widths */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f6f8;
+  color: #22262b;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background: #22262b;
+  color: #fff;
+}
+
+/* Flexbox aligns all boxes horizontally and wraps on small screens */
+.box-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.box {
+  width: 160px;
+  background: #fff;
+  text-align: center;
+  font-size: 0.9rem;
+  border: 3px solid #6b7280;
+  /* Smooth border color change on hover */
+  transition: border-color 0.3s ease;
+}
+
+.box:hover {
+  border-color: #1a7f37;
+}
+
+/* Different border styles, one per box */
+.solid   { border-style: solid;  padding: 10px; }
+.dashed  { border-style: dashed; padding: 20px; }
+.double  { border-style: double; border-width: 6px; padding: 15px; }
+.groove  { border-style: groove; border-width: 6px; padding: 25px; }
+
+/* Rounded corners example */
+.rounded {
+  border-style: solid;
+  border-radius: 16px;
+  padding: 18px;
+}

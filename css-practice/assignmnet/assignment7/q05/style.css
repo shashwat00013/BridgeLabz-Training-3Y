@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f6f8;
+  color: #22262b;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #22262b;
+  color: #fff;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+/* ---------- Attribute selectors ---------- */
+/* Targets any input whose type attribute equals "text" */
+input[type="text"] {
+  padding: 8px 10px;
+  border: 2px solid #6b7280;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Targets any link whose href starts with "https" */
+a[href^="https"] {
+  color: #1a7f37;
+  font-weight: bold;
+}
+
+/* ---------- Pseudo-classes ---------- */
+/* :hover - visual feedback on interaction */
+a:hover {
+  text-decoration: underline;
+}
+
+/* :focus - highlights the active input */
+input[type="text"]:focus {
+  outline: 3px solid #4fd1c5;
+  border-color: #4fd1c5;
+}
+
+/* :nth-child(odd) - stripes every other list item */
+.item-list li:nth-child(odd) {
+  background: #f0f2f5;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item-list li {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* ---------- Pseudo-elements ---------- */
+/* ::before inserts content before the heading text */
+.quote-heading::before {
+  content: "“ ";
+  color: #4fd1c5;
+  font-size: 1.4rem;
+}
+
+/* ::after inserts content after the heading text */
+.quote-heading::after {
+  content: " ”";
+  color: #4fd1c5;
+  font-size: 1.4rem;
+}
+
+/* ---------- Combinators ---------- */
+/* Child combinator (>): only DIRECT children of .parent are styled */
+.parent > p {
+  color: #1a7f37;
+  font-weight: bold;
+}
+
+/* Adjacent sibling combinator (+): only the paragraph immediately
+   after an h3 gets this style */
+h3 + p {
+  color: #d9480f;
+}
+
+/* Descendant combinator (space): any p inside .parent, at any depth */
+.parent p {
+  margin: 6px 0;
+}

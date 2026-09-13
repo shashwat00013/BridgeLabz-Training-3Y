@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f6f8;
+  color: #22262b;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #22262b;
+  color: #fff;
+}
+
+/* Centers the whole demonstration on the page */
+.demo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 20px;
+}
+
+.label {
+  margin: 4px 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: none;
+}
+
+/* Margin layer - outermost, shown with an outline since margin has no fill */
+.margin-layer {
+  outline: 2px dashed #d9480f;
+  padding: 20px;
+}
+
+/* Border layer */
+.border-layer {
+  background: #fde2c8;
+  border: 6px solid #f2994a;
+  padding: 0;
+}
+
+/* Padding layer */
+.padding-layer {
+  background: #d9f2ea;
+  padding: 20px;
+}
+
+/* Content layer - the innermost box */
+.content-layer {
+  background: #4fd1c5;
+  color: #fff;
+  width: 150px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Comparison of content-box vs border-box */
+.compare {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.compare-box {
+  width: 220px;
+  padding: 20px;
+  border: 6px solid #22262b;
+  background: #fff;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* Default: padding and border ADD to the 220px width */
+.content-box {
+  box-sizing: content-box;
+}
+
+/* border-box: padding and border are INCLUDED within the 220px width */
+.border-box {
+  box-sizing: border-box;
+}

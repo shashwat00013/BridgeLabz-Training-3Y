@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q5 - Advanced CSS Selectors</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Advanced Selectors Demo</h1>
+  </header>
+
+  <main>
+    <section class="attr-demo">
+      <h2>Attribute Selectors</h2>
+      <input type="text" placeholder="Styled via [type='text']">
+      <br><br>
+      <a href="https://example.com">A link starting with https</a>
+      <a href="/local-page">A local link (not styled the same way)</a>
+    </section>
+
+    <section class="list-demo">
+      <h2>Pseudo-classes: nth-child, hover, focus</h2>
+      <ul class="item-list">
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+        <li>Item four</li>
+        <li>Item five</li>
+      </ul>
+      <input type="text" placeholder="Focus me to see outline change">
+    </section>
+
+    <section class="pseudo-demo">
+      <h2 class="quote-heading">Pseudo-elements</h2>
+      <p>This heading has ::before and ::after decoration added purely with CSS.</p>
+    </section>
+
+    <section class="combinator-demo">
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Direct child paragraph (styled with &gt;)</p>
+        <span>
+          <p>Nested paragraph (not a direct child, unaffected by &gt;)</p>
+        </span>
+      </div>
+      <h3>Adjacent sibling (+)</h3>
+      <p>This paragraph is right after the h3 above.</p>
+      <p>This second paragraph is not adjacent, so it looks different.</p>
+    </section>
+  </main>
+</body>
+</html>

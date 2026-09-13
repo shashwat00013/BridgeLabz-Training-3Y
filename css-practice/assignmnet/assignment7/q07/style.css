@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f8;
+  color: #22262b;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #22262b;
+  color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+main {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+article {
+  background: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/* Serif article: wider line-height, slight letter-spacing, justified feel */
+.serif-block {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+/* Sans-serif article: tighter line-height, different weight */
+.sans-block {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+/* Custom colors for inline emphasis elements */
+mark {
+  background: #fff3b0;
+  color: #22262b;
+  padding: 0 3px;
+}
+
+strong {
+  color: #1a7f37;
+}
+
+em {
+  color: #d9480f;
+}
+
+/* First letter of the sans-serif paragraph is enlarged, like a drop cap */
+.sans-block p::first-letter {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4fd1c5;
+}
+
+/* First line gets a distinct style */
+.sans-block p::first-line {
+  font-weight: 600;
+}

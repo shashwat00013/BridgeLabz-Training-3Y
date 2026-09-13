@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Q8 - Box Model Exploration</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Box Model Exploration</h1>
+  </header>
+
+  <main class="demo-area">
+    <div class="model-wrap">
+      <p class="label">margin</p>
+      <div class="margin-layer">
+        <p class="label">border</p>
+        <div class="border-layer">
+          <p class="label">padding</p>
+          <div class="padding-layer">
+            <p class="label">content</p>
+            <div class="content-layer">150 x 80</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="compare">
+      <div class="compare-box content-box">
+        <p>box-sizing: content-box (default)<br>width doesn't include padding/border, so box grows bigger</p>
+      </div>
+      <div class="compare-box border-box">
+        <p>box-sizing: border-box<br>width includes padding/border, so box stays the set size</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #fff;
+}
+
+.site-header, .site-footer {
+  text-align: center;
+  padding: 18px;
+  background: #22262b;
+}
+
+/* Linear gradient goes from top-left to bottom-right (135deg) */
+.linear-section {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  /* Fixed attachment creates a parallax-like effect when scrolling */
+  background-attachment: fixed;
+}
+
+/* Radial gradient radiates from the center outward */
+.radial-section {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background: radial-gradient(circle at center, #ff9a9e, #fad0c4 70%);
+  color: #22262b;
+}
+
+section p {
+  max-width: 500px;
+}
