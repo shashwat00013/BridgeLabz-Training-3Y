@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1f3f8;
+    color: #222;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3.6rem;
+    background-color: #1f2a44;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    z-index: 200;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .layout {
+    display: flex;
+    padding-top: 3.6rem;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    width: 220px;
+    background-color: #ffffff;
+    border-right: 1px solid #e2e6ee;
+    min-height: calc(100vh - 3.6rem);
+    padding: 1.5rem 0;
+    flex-shrink: 0;
+  }
+
+  .sidebar ul {
+    list-style: none;
+  }
+
+  .sidebar li a {
+    display: block;
+    padding: 0.85rem 1.5rem;
+    color: #4a5468;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+  }
+
+  .sidebar li a:hover,
+  .sidebar li a.active {
+    background-color: #f1f5ff;
+    color: #1f2a44;
+    border-left: 3px solid #4c7cf0;
+  }
+
+  .content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 1.6rem;
+    color: #1f2a44;
+    margin-bottom: 0.3rem;
+  }
+
+  .boxes {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    padding: 1.8rem;
+    flex: 1 1 260px;
+  }
+
+  .box h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: #1f2a44;
+  }
+
+  .box .stat {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4c7cf0;
+    margin-bottom: 0.4rem;
+  }
+
+  .box p {
+    color: #7a8299;
+    font-size: 0.9rem;
+  }
+
+  /* Responsive: sidebar stacks above content */
+  @media (max-width: 700px) {
+    .layout {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+      min-height: auto;
+      border-right: none;
+      border-bottom: 1px solid #e2e6ee;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>My Dashboard</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <ul>
+      <li><a href="#" class="active">Overview</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Messages</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+    <h1>Overview</h1>
+
+    <div class="boxes">
+      <div class="box">
+        <h2>Total Reviews Analyzed</h2>
+        <div class="stat">12,480</div>
+        <p>Across all tracked products this month</p>
+      </div>
+
+      <div class="box">
+        <h2>Positive Sentiment</h2>
+        <div class="stat">73%</div>
+        <p>Up 4% compared to last month</p>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

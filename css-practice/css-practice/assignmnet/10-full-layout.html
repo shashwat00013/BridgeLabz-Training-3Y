@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Layout — Box Model & Positioning</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #222;
+    background-color: #fafafa;
+  }
+
+  /* Sticky header */
+  header {
+    position: sticky;
+    top: 0;
+    background-color: #12141c;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 500;
+    outline: 1px solid rgba(255,255,255,0.05);
+  }
+
+  header h1 { font-size: 1.3rem; }
+
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+  }
+
+  header nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  header nav a:hover { color: #7cc7ff; }
+
+  /* Hero — relative positioning + centered absolute text */
+  .hero {
+    position: relative;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+      url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 2rem 3rem;
+    border: 2px solid rgba(255,255,255,0.3);
+  }
+
+  .hero-text h2 {
+    font-size: 2.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    max-width: 40em;
+  }
+
+  /* About — two columns */
+  .about {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 4rem 8%;
+    flex-wrap: wrap;
+  }
+
+  .about-text { flex: 1 1 350px; }
+  .about-text h2 { font-size: 1.8rem; margin-bottom: 1rem; color: #12141c; }
+  .about-text p { line-height: 1.7em; color: #444; }
+
+  .about img {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border-radius: 10px;
+    outline: 4px solid rgba(76,124,240,0.15);
+  }
+
+  /* Services — grid of three boxes */
+  .services {
+    padding: 4rem 8%;
+    background-color: #f1f3f8;
+  }
+
+  .services h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    color: #12141c;
+  }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+
+  .service-box {
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+    border: 1px solid #e2e6ee;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .service-box h3 {
+    margin-bottom: 0.6rem;
+    color: #4c7cf0;
+  }
+
+  .service-box p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  /* Contact — simple form, relative positioned label accents */
+  .contact {
+    padding: 4rem 8%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #12141c;
+  }
+
+  .contact .field {
+    position: relative;
+    margin-bottom: 1.4rem;
+  }
+
+  .contact label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #333;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #d7dce6;
+    border-radius: 6px;
+    font-family: inherit;
+  }
+
+  .contact button {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #12141c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #12141c;
+    color: #aaa;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 700px) {
+    .service-grid { grid-template-columns: 1fr; }
+    .about { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BrandName</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Build Something Great</h2>
+    <p>A complete demonstration of the CSS Box Model, positioning, and responsive layout — all in one page.</p>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-text">
+    <h2>About Us</h2>
+    <p>
+      We design and build clean, functional web experiences. This section demonstrates a
+      two-column layout combining descriptive text with a supporting image, using flexbox
+      for alignment and the box model for consistent spacing.
+    </p>
+  </div>
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500" alt="Team working">
+</section>
+
+<section class="services" id="services">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+    <div class="service-box">
+      <h3>Web Design</h3>
+      <p>Clean, responsive layouts tailored to your brand.</p>
+    </div>
+    <div class="service-box">
+      <h3>Development</h3>
+      <p>Robust frontend and backend engineering.</p>
+    </div>
+    <div class="service-box">
+      <h3>Consulting</h3>
+      <p>Strategic guidance for your next digital product.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+  <form action="#" method="post">
+    <div class="field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+    </div>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2026 BrandName. All rights reserved.
+</footer>
+
+</body>
+</html>
