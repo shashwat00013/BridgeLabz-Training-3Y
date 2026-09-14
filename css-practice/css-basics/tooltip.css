@@ -1,0 +1,14 @@
+.tooltip-text{
+  position:relative;
+  display: inline-block;
+}
+.tooltip-text{
+  visibility: hidden;
+  position: absolute;
+  background: black;
+  color: aliceblue;
+  padding: 8px;
+}
+.tooltip:hover .tooltip-text{
+  visibility: visible;
+}
