@@ -1,0 +1,24 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.post {
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.pagination .page-link {
+  color: #0d6efd;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: #ffffff;
+}

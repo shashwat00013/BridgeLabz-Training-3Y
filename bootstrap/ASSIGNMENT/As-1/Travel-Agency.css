@@ -1,0 +1,43 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.destination-img {
+  height: 480px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.progress {
+  height: 28px;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .destination-img {
+    height: 300px;
+  }
+
+  .carousel-caption {
+    padding: 8px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+  }
+}

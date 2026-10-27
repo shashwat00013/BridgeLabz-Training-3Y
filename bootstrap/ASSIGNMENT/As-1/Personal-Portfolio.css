@@ -1,0 +1,23 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.portfolio-card {
+  max-width: 850px;
+  margin: auto;
+}
+
+.btn {
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,17 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.task-panel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.list-group-item {
+  padding: 16px;
+}
+
+.badge {
+  padding: 7px 10px;
+}

@@ -1,0 +1,14 @@
+
+.restaurant-header {
+  background: linear-gradient(120deg, #7b241c, #c76b27);
+}
+
+main h2 {
+  color: #7b241c;
+}
+
+.figure-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}

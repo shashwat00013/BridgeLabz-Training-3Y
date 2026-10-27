@@ -1,0 +1,18 @@
+
+/* Custom hero background */
+.hero {
+  background: linear-gradient(135deg, #183153, #2878b5);
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+}
+
+/* Smooth hover transition for service cards */
+#services .border {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#services .border:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}

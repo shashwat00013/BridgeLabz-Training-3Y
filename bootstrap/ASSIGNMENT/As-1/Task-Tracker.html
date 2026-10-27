@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Task-Tracker.css">
+</head>
+<body class="bg-light">
+  <header class="bg-primary text-white py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <h1 class="h3 mb-0">My Task Tracker</h1>
+      <!-- Badge displays the pending task count -->
+      <span class="badge bg-light text-dark fs-6">
+        Pending: <span class="badge bg-danger">4</span>
+      </span>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <section class="task-panel bg-white rounded shadow-sm p-4">
+      <h2 class="h4 mb-4">Today's Tasks</h2>
+
+      <!-- list-group creates a structured task list -->
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center gap-2">
+          <span>Complete assignment</span>
+          <span class="badge bg-danger">High</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center gap-2">
+          <span>Practice Java problems</span>
+          <span class="badge bg-warning text-dark">Medium</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center gap-2">
+          <span>Read Bootstrap documentation</span>
+          <span class="badge bg-success">Low</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center gap-2">
+          <span>Update project README</span>
+          <span class="badge bg-danger">High</span>
+        </li>
+      </ul>
+
+      <div class="mt-4">
+        <h3 class="h5">Completed Tasks</h3>
+        <button type="button" class="btn btn-success">
+          Completed <span class="badge bg-light text-dark">3</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-muted p-3">
+    <p class="mb-0">Stay organized. Get things done.</p>
+  </footer>
+</body>
+</html>
