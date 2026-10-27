@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Dashboard</title>
+  <link rel="stylesheet" href="grid-dashboard.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header class="dash-header"><strong>DataDesk</strong><span>Workspace Overview</span></header>
+    <aside class="sidebar"><h2>Menu</h2><nav aria-label="Dashboard navigation"><a href="#overview">Overview</a><a href="#reports">Reports</a><a href="#activity">Activity</a><a href="#settings">Settings</a></nav></aside>
+    <main class="main-content" id="overview"><h1>Dashboard</h1><p>Your latest workspace metrics at a glance.</p>
+      <section class="cards">
+        <article class="box wide" id="reports"><p class="metric-label">Monthly progress</p><h2>78%</h2><div class="progress"><span></span></div><p>You're making steady progress toward your monthly goal.</p></article>
+        <article class="box"><p class="metric-label">Active projects</p><h2>12</h2><p>3 projects updated this week.</p></article>
+        <article class="box"><p class="metric-label">Tasks completed</p><h2>46</h2><p>8 tasks completed today.</p></article>
+        <article class="box" id="activity"><p class="metric-label">Recent activity</p><h2>On track</h2><p>Your team has been active throughout the week.</p></article>
+        <article class="box" id="settings"><p class="metric-label">Next milestone</p><h2>Nov 05</h2><p>Review the project roadmap and confirm priorities.</p></article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

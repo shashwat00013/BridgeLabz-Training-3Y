@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="dashboard-header"><strong>StudySpace</strong><span>Student Dashboard</span></header>
+  <div class="dashboard-layout">
+    <aside class="sidebar"><nav aria-label="Dashboard navigation"><a href="#overview">Overview</a><a href="#courses">My Courses</a><a href="#tasks">Tasks</a><a href="#settings">Settings</a></nav></aside>
+    <main class="dashboard-content" id="overview">
+      <h1>Welcome back!</h1><p>Here is a quick look at your learning progress.</p>
+      <section class="content-grid">
+        <article class="content-box" id="courses"><h2>My Courses</h2><p>You are enrolled in <strong>4 courses</strong>.</p><div class="progress"><span style="width: 72%"></span></div><p>Overall progress: 72%</p></article>
+        <article class="content-box" id="tasks"><h2>Upcoming Tasks</h2><ul><li>Complete CSS layout practice</li><li>Review JavaScript notes</li><li>Submit weekly assignment</li></ul></article>
+        <article class="content-box"><h2>Recent Activity</h2><p>Last session: HTML semantics and responsive design.</p><p>Keep your learning streak going!</p></article>
+        <article class="content-box" id="settings"><h2>Quick Notes</h2><p>Set aside 30 minutes today for revision and practice.</p></article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

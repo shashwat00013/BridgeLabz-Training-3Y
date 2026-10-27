@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7fb; color: #202b3c; font-family: Arial, sans-serif; line-height: 1.65; }
+header, footer { padding: 1.5rem; text-align: center; background: #1e3a5f; color: white; }
+header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); }
+.page { width: min(900px, 92%); margin: 2rem auto; display: grid; gap: 1.25rem; }
+/* Element selector: all paragraphs get a consistent base margin. */
+p { margin: .6rem 0; }
+/* Class selector: reusable highlight style. */
+.highlight { padding: .6rem; border-left: 4px solid #0f766e; background: #dff7f0; }
+/* ID selector: unique element emphasis. */
+#special { padding: .6rem; border-radius: 6px; background: #fff0c2; font-weight: 700; }
+/* Descendant selector: any strong element inside .descendant-note. */
+.descendant-note strong { color: #b45309; }
+/* Attribute selector: links that point to HTTPS URLs. */
+a[href^="https"] { display: inline-block; margin: .3rem .8rem .3rem 0; color: #2457a6; font-weight: 700; }
+/* Child combinator: only direct li children of .topics. */
+.topics > li { margin: .7rem 0; padding: .7rem; border-radius: 7px; background: #eef2ff; }
+/* Adjacent sibling combinator: paragraph immediately following a list item span. */
+.topics span + p { margin-top: .2rem; color: #667085; }
+/* General sibling combinator: any .sibling-note after .topics in the same parent. */
+.topics ~ .sibling-note { padding: .7rem; background: #ffedd5; border-radius: 6px; }
+.intro-card, .link-card, .relationship-card { padding: 1.5rem; border: 1px solid #dce3ed; border-radius: 12px; background: white; box-shadow: 0 5px 16px rgba(20,35,60,.06); }
+h2 { margin-top: 0; color: #344b9b; }
+footer { margin-top: auto; }

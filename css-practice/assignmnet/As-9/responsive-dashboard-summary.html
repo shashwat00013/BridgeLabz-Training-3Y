@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Dashboard Summary</title>
+  <link rel="stylesheet" href="responsive-dashboard-summary.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header class="dashboard-header"><a href="#" class="brand">CSS Dashboard</a><p>Responsive Design Toolkit</p></header>
+    <aside class="sidebar">
+      <h2>Navigation</h2>
+      <nav aria-label="Dashboard navigation"><a href="#filters">Filters</a><a href="#typography">Typography</a><a href="#queries">Media Queries</a><a href="#cheatsheet">Cheat Sheet Links</a></nav>
+    </aside>
+    <main class="main-content">
+      <section class="welcome"><h1>Responsive Dashboard</h1><p>A compact overview of core CSS techniques.</p></section>
+      <section class="dashboard-cards" aria-label="CSS topic cards">
+        <article class="dash-card" id="filters"><h2>Filters</h2><p>Style image appearance with CSS.</p><code>filter: sepia(70%);</code></article>
+        <article class="dash-card" id="typography"><h2>Typography</h2><p>Scale text fluidly using clamp().</p><code>font-size: clamp(1rem, 2vw, 1.5rem);</code></article>
+        <article class="dash-card" id="queries"><h2>Media Queries</h2><p>Adjust styles at selected breakpoints.</p><code>@media (max-width: 750px)</code></article>
+        <article class="dash-card" id="cheatsheet"><h2>Cheat Sheet Links</h2><p>Keep a quick reference to common responsive patterns.</p><a href="responsive-css-cheat-sheet.html">Open CSS cheat sheet →</a></article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

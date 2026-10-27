@@ -1,0 +1,19 @@
+/* Base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #18212f; background: #f4f7fb; }
+.page-header, footer { text-align: center; padding: 1.5rem; }
+.page-header h1 { margin-bottom: .4rem; }
+.page-header p { color: #526174; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem; padding: 1.5rem; max-width: 1200px; margin: auto; }
+figure { margin: 0; overflow: hidden; border-radius: 12px; background: white; box-shadow: 0 5px 18px #17203318; }
+figure img { display: block; width: 100%; height: 220px; object-fit: cover; transition: filter .45s ease, transform .45s ease; }
+figcaption { padding: .85rem; text-align: center; font-weight: 700; }
+.blur { filter: blur(2px); }
+.grayscale { filter: grayscale(100%); }
+.sepia { filter: sepia(100%); }
+.brightness { filter: brightness(1.45); }
+.contrast { filter: contrast(1.7); }
+.hue { filter: hue-rotate(115deg); }
+figure:hover img { filter: none; transform: scale(1.03); }
+footer { color: #526174; }
+@media (max-width: 600px) { .gallery { grid-template-columns: 1fr; padding: 1rem; } figure img { height: 240px; } }

@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: flex; flex-direction: column; background: #f8fafc; color: #1e293b; font-family: Arial, sans-serif; }
+header, footer { padding: 1.25rem; text-align: center; background: #273c75; color: white; }
+header h1 { margin: .2rem; }
+.size-stage { flex: 1; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 1.5rem; padding: 2rem; }
+.size-box { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 1rem; text-align: center; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,.1); }
+.box-px { width: 220px; height: 150px; background: #ffd6a5; }
+.box-percent { width: 75%; max-width: 420px; min-height: 12em; background: #caffbf; }
+.overflow-demo { max-height: 3.5em; overflow: auto; padding: .4rem; background: rgba(255,255,255,.65); }
+.box-vh { width: 20vw; min-width: 170px; height: 25vh; min-height: 170px; background: #bdb2ff; }
+footer { margin-top: auto; }
+@media (max-width: 650px) { .box-percent { width: 100%; } .box-vh { width: 70vw; height: 22vh; } }

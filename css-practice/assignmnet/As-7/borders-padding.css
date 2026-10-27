@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: #f4f7fb; color: #1e293b; font-family: Arial, sans-serif; line-height: 1.6; }
+header, footer { padding: 1.5rem; text-align: center; background: #1d3557; color: white; }
+header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); }
+main { flex: 1; width: min(1150px, 94%); margin: 2rem auto; }
+.box-row, .rounded-row { display: flex; align-items: stretch; justify-content: center; flex-wrap: wrap; gap: 1.25rem; margin-bottom: 2rem; }
+.demo-box { flex: 1 1 210px; min-height: 180px; background: white; border-width: 5px; border-color: #457b9d; transition: border-color .3s ease; }
+.demo-box:hover, .rounded:hover { border-color: #e76f51; }
+.solid { border-style: solid; padding: 12px; }
+.dashed { border-style: dashed; padding: 24px; }
+.double { border-style: double; padding: 1.5em; }
+.groove { border-style: groove; padding: 2rem; }
+.rounded { flex: 1 1 220px; padding: 1.5rem; border: 3px solid #457b9d; background: #eaf2f8; text-align: center; transition: border-color .3s ease, transform .3s ease; }
+.rounded:hover { transform: translateY(-4px); }
+.small-radius { border-radius: 8px; }
+.pill-radius { border-radius: 999px; }
+.large-radius { border-radius: 30px; }
+footer { margin-top: auto; }

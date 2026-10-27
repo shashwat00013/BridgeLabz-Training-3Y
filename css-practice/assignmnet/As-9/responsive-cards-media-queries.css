@@ -1,0 +1,13 @@
+/* Four cards: 4 columns, then 2, then 1 */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #1c2738; background: #f3f6fb; }
+header { text-align: center; padding: 2rem 1rem 1rem; }
+header p { color: #5c6878; }
+.cards { display: flex; flex-wrap: wrap; gap: 1.25rem; padding: 1.5rem 5%; }
+.card { flex: 1 1 calc(25% - 1.25rem); min-width: 0; padding: 1.5rem; border-radius: 14px; background: #fff; box-shadow: 0 6px 20px #1c273812; transition: background-color .25s ease, transform .25s ease; }
+.card:hover { background: #dbeafe; transform: translateY(-4px); }
+.number { color: #2563eb; font-weight: 800; }
+.card h2 { margin: .8rem 0; }
+.card p { line-height: 1.6; color: #526174; }
+@media (max-width: 900px) { .card { flex-basis: calc(50% - 1.25rem); } }
+@media (max-width: 600px) { .cards { flex-direction: column; } .card { flex-basis: 100%; } }

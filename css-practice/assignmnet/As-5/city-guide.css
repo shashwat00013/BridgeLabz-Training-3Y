@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Georgia, serif; color: #28231f; background: #fff8ef; }
+.top { padding: 3rem 1rem; text-align: center; color: white; background: #7f1d1d; }
+.top h1 { margin: 0; font-size: clamp(2.4rem, 5vw, 4rem); font-weight: 800; }
+.top p { font-size: 1.2rem; }
+nav { display: flex; justify-content: center; gap: 2rem; padding: 1rem; background: #3f2d20; }
+nav a { color: white; text-decoration: none; font-weight: bold; }
+.section { min-height: 75vh; padding: 8vh 10%; display: flex; align-items: center; background-size: cover; background-position: center; background-attachment: fixed; }
+.section > div { max-width: 42rem; padding: 2rem; border-radius: 12px; background: rgba(255,248,239,.9); border: 2px solid rgba(127,29,29,.25); }
+.section h2 { margin-top: 0; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; }
+.section p { font-size: 1.15rem; line-height: 1.8; }
+.heritage { background-image: linear-gradient(120deg, rgba(75,20,20,.35), rgba(217,119,6,.35)), url("https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1600&q=80"); }
+.food { background: radial-gradient(circle at 70% 30%, #ffcf8b, #f3a683 45%, #9f3d28); }
+.nature { background-image: linear-gradient(rgba(15,45,35,.25), rgba(15,45,35,.5)), url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1600&q=80"); }
+footer { padding: 1.5rem; text-align: center; background: #3f2d20; color: white; }
+@media (max-width: 600px) { nav { gap: 1rem; } .section { padding: 3rem 5%; background-attachment: scroll; } .section > div { padding: 1.25rem; } }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced CSS Selectors</title>
+  <link rel="stylesheet" href="advanced-selectors.css">
+</head>
+<body>
+  <header><h1>Advanced CSS Selectors</h1><p>Hover, focus, attributes, relationships, and pseudo-elements.</p></header>
+  <main class="selector-demo">
+    <section class="form-panel">
+      <h2>Attribute selectors</h2>
+      <label for="sample-text">Text input ([type="text"])</label><input id="sample-text" type="text" placeholder="Focus or type here">
+      <label for="sample-email">Email input</label><input id="sample-email" type="email" placeholder="name@example.com">
+      <p><a href="https://developer.mozilla.org/">Secure HTTPS link ([href^="https"])</a></p>
+    </section>
+    <section class="list-panel">
+      <h2>Selector relationships</h2>
+      <ul class="item-list">
+        <li><span>Item one</span><p>First item description.</p></li>
+        <li><span>Item two</span><p>Second item description.</p></li>
+        <li><span>Item three</span><p>Third item description.</p></li>
+        <li><span>Item four</span><p>Fourth item description.</p></li>
+      </ul>
+      <p class="note">This note is a sibling of the list and demonstrates the general sibling selector.</p>
+      <p class="after-note">Pseudo-elements add decorative content around this message.</p>
+    </section>
+  </main>
+  <footer>Selectors let you target elements without adding extra classes everywhere.</footer>
+</body>
+</html>

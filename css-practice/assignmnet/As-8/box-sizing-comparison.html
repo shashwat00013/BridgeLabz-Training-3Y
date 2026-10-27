@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Sizing Comparison</title>
+  <link rel="stylesheet" href="box-sizing-comparison.css">
+</head>
+<body>
+  <main class="page">
+    <header><p class="eyebrow">CSS sizing fundamentals</p><h1>Box-Sizing Comparison</h1><p>Both examples declare a width of 260px and use the same padding and border.</p></header>
+    <section class="comparison">
+      <article class="example"><h2>content-box</h2><div class="demo content-box">Declared width: 260px<br>Padding: 24px<br>Border: 8px</div><p>The default content-box model adds padding and borders outside the declared width. Total width: 260 + 48 + 16 = 324px.</p></article>
+      <article class="example"><h2>border-box</h2><div class="demo border-box">Declared width: 260px<br>Padding: 24px<br>Border: 8px</div><p>The border-box model includes padding and borders inside the declared width. Total width stays 260px.</p></article>
+    </section>
+    <footer>Use box-sizing: border-box for more predictable layouts.</footer>
+  </main>
+</body>
+</html>

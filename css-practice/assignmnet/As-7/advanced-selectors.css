@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f8fc; color: #202b3c; font-family: Arial, sans-serif; line-height: 1.6; }
+header, footer { padding: 1.5rem; text-align: center; background: #203a5f; color: white; }
+header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); }
+.selector-demo { width: min(1000px, 92%); margin: 2rem auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.form-panel, .list-panel { padding: 1.5rem; border: 1px solid #dbe2ed; border-radius: 14px; background: white; box-shadow: 0 6px 18px rgba(20,35,60,.06); }
+label { display: block; margin: .8rem 0 .3rem; font-weight: 700; }
+/* Attribute selector: targets only text inputs. */
+input[type="text"] { border: 2px solid #7c83fd; }
+/* Attribute selector: targets links whose href begins with https. */
+a[href^="https"] { color: #2457a6; font-weight: 700; }
+/* Focus pseudo-class: visible keyboard and input focus. */
+input:focus { outline: 3px solid rgba(124,131,253,.25); border-color: #4338ca; }
+/* Hover pseudo-class: highlights the list item under the pointer. */
+.item-list li:hover { background: #eef2ff; }
+/* nth-child pseudo-class: styles every second list item. */
+.item-list li:nth-child(even) { border-left: 4px solid #f59e0b; }
+/* Child combinator (>): targets only direct list-item children. */
+.item-list > li { margin: .5rem 0; padding: .65rem; border-radius: 6px; }
+/* Descendant combinator (space): targets spans anywhere inside the list. */
+.item-list span { font-weight: 800; color: #293e73; }
+/* Adjacent sibling combinator (+): styles the paragraph directly after a span. */
+.item-list span + p { margin: .2rem 0 0; color: #667085; font-size: .9rem; }
+/* General sibling combinator (~): targets .note after .item-list in the same parent. */
+.item-list ~ .note { padding: .8rem; background: #fff4d6; border-radius: 7px; }
+/* Pseudo-elements: add decorative content before and after the note. */
+.after-note::before { content: "★ "; color: #d97706; }
+.after-note::after { content: " ✓"; color: #15803d; font-weight: 800; }
+@media (max-width: 700px) { .selector-demo { grid-template-columns: 1fr; } }

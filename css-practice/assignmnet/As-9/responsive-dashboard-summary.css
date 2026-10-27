@@ -1,0 +1,28 @@
+/* Dashboard uses CSS Grid with a responsive sidebar */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #1e293b; background: #f3f6fb; }
+.dashboard { min-height: 100vh; display: grid; grid-template-columns: 230px minmax(0, 1fr); grid-template-rows: auto 1fr; }
+.dashboard-header { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 2rem; background: #142847; color: white; }
+.dashboard-header p { margin: 0; }
+.brand { color: white; font-weight: 800; font-size: 1.2rem; text-decoration: none; }
+.sidebar { padding: 1.5rem; background: #e6edf7; }
+.sidebar h2 { font-size: 1rem; }
+.sidebar nav { display: flex; flex-direction: column; gap: .5rem; }
+.sidebar nav a { padding: .7rem; color: #24466f; text-decoration: none; border-radius: 7px; }
+.sidebar nav a:hover { background: #d2e2fb; }
+.main-content { min-width: 0; padding: 1.5rem; }
+.welcome { animation: load-in .65s ease both; }
+.welcome h1 { margin-top: 0; font-size: clamp(1.5rem, 3vw, 2.3rem); }
+.welcome p { color: #64748b; }
+.dashboard-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.dash-card { min-width: 0; padding: 1.3rem; border-radius: 13px; background: white; box-shadow: 0 5px 18px #14284712; animation: load-in .65s ease both; transition: transform .25s ease, box-shadow .25s ease; }
+.dash-card:nth-child(2) { animation-delay: .08s; }
+.dash-card:nth-child(3) { animation-delay: .16s; }
+.dash-card:nth-child(4) { animation-delay: .24s; }
+.dash-card:hover { transform: scale(1.025); box-shadow: 0 12px 26px #14284722; }
+.dash-card h2 { margin-top: 0; color: #245fc2; }
+.dash-card p { line-height: 1.5; }
+code { display: block; padding: .65rem; background: #edf2fa; border-radius: 6px; overflow-wrap: anywhere; font-size: .85rem; }
+.dash-card a { color: #245fc2; font-weight: 700; }
+@keyframes load-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 750px) { .dashboard { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; } .dashboard-header { flex-wrap: wrap; padding: 1rem; } .sidebar { padding: .75rem 1rem; } .sidebar h2 { margin: .4rem 0; } .sidebar nav { flex-direction: row; flex-wrap: wrap; } .main-content { padding: 1rem; } .dashboard-cards { grid-template-columns: 1fr; } }

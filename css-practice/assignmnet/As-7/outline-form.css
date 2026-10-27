@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: flex; align-items: center; justify-content: center; padding: 2rem 1rem; background: linear-gradient(135deg, #dbeafe, #fce7f3); color: #202b3c; font-family: Arial, sans-serif; }
+.form-wrap { width: 100%; max-width: 560px; }
+.form-card { padding: clamp(1.5rem, 5vw, 2.5rem); border: 1px solid #e1e5ee; border-radius: 18px; background: white; box-shadow: 0 16px 40px rgba(25,40,70,.13); }
+.eyebrow { color: #5b55d6; font-size: .8rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+h1 { margin: .25rem 0; font-size: 2.3rem; }
+form { display: flex; flex-direction: column; }
+label { margin: .9rem 0 .35rem; font-weight: 700; }
+input, textarea { width: 100%; padding: .9rem 1rem; border: 1px solid #cbd5e1; border-radius: 8px; background: #fbfcff; color: #202b3c; font: inherit; box-shadow: 0 2px 5px rgba(0,0,0,.04); }
+/* Different outline styles demonstrate that outlines do not change box dimensions. */
+input[type="text"] { outline: 2px dashed transparent; outline-offset: 2px; }
+input[type="email"] { outline: 2px dotted transparent; outline-offset: 3px; }
+textarea { outline: 2px solid transparent; outline-offset: 3px; resize: vertical; }
+/* Focus adds a visible colour and offset for keyboard accessibility. */
+input:focus, textarea:focus { outline-color: #6558d3; border-color: #6558d3; box-shadow: 0 0 0 4px rgba(101,88,211,.12); }
+button { margin-top: 1.4rem; padding: .9rem; border: 0; border-radius: 8px; background: #4f46e5; color: white; font: inherit; font-weight: 800; cursor: pointer; }
+button:hover { background: #3730a3; }

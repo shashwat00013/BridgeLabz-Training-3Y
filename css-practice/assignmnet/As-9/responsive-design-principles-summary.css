@@ -1,0 +1,14 @@
+/* Principle cards use Grid and gradient hover states */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #1f2937; background: #f4f7fb; }
+header { text-align: center; padding: 2.5rem 1rem 1rem; }
+header p { color: #5d6b7d; }
+.principles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; max-width: 1150px; margin: auto; padding: 1.5rem; }
+.principle { padding: 1.6rem; border: 1px solid #e0e7f0; border-radius: 15px; background: white; transition: background .35s ease, color .35s ease, transform .35s ease; }
+.principle:hover { color: white; background: linear-gradient(135deg, #2563eb, #7c3aed); transform: translateY(-5px); }
+.principle h2 { margin-top: 0; }
+.principle p { line-height: 1.6; }
+code { display: block; padding: .8rem; border-radius: 7px; background: #eaf0fa; color: #23344e; overflow-wrap: anywhere; }
+.principle:hover code { background: #ffffff24; color: white; }
+footer { text-align: center; padding: 1.5rem; color: #5d6b7d; }
+@media (max-width: 600px) { .principles { grid-template-columns: 1fr; padding: 1rem; } }

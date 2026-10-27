@@ -1,0 +1,15 @@
+/* Responsive concept cards */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #1e293b; background: #f5f7fb; }
+header { text-align: center; padding: 2.5rem 1rem 1.5rem; }
+.eyebrow { color: #2563eb; font-size: .8rem; font-weight: 800; letter-spacing: .16em; }
+header h1 { margin: .4rem 0; }
+header > p:last-child { color: #64748b; }
+.topics { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; max-width: 1100px; margin: auto; padding: 1.5rem; }
+.topic { padding: 1.5rem; background: white; border: 1px solid #e0e7f0; border-radius: 14px; transition: transform .25s ease, background .25s ease, box-shadow .25s ease; }
+.topic:hover { transform: translateY(-5px); background: #edf4ff; box-shadow: 0 10px 24px #1e293b15; }
+.topic h2 { margin-top: 0; color: #245ac0; }
+.topic p { line-height: 1.6; }
+code { display: block; padding: .75rem; border-radius: 7px; background: #e9eef8; overflow-wrap: anywhere; font-size: .9rem; }
+footer { text-align: center; padding: 1.5rem; color: #64748b; }
+@media (max-width: 700px) { .topics { grid-template-columns: 1fr; padding: 1rem; } .topic { display: grid; grid-template-columns: 1fr; gap: .4rem; } .topic h2 { margin-bottom: 0; } }

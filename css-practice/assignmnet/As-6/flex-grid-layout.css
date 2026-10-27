@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { min-height: 100vh; margin: 0; display: flex; flex-direction: column; background: #f5f7fb; color: #202b3b; font-family: Arial, sans-serif; line-height: 1.7; }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.1rem 7%; background: #1f3150; color: white; }
+.logo { color: white; font-size: 1.35rem; font-weight: 900; text-decoration: none; }
+nav { display: flex; gap: 1.4rem; }
+nav a { color: white; text-decoration: none; }
+nav a:hover { color: #f6bd60; }
+.layout { flex: 1; width: min(1150px, 90%); margin: 2.5rem auto; display: grid; grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr); gap: 2rem; align-items: start; }
+.main-article, .sidebar { padding: clamp(1.25rem, 3vw, 2rem); border: 1px solid #e1e6ef; border-radius: 14px; background: white; box-shadow: 0 7px 22px rgba(20,35,60,.07); }
+.eyebrow { color: #d65a31; font-size: .8rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+h1 { margin: .3rem 0 1rem; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.15; }
+.animated-title { animation: title-enter .8s ease both; }
+@keyframes title-enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+.article-cards { display: flex; gap: 1rem; margin-top: 2rem; }
+.tip { flex: 1; padding: 1rem; border-radius: 10px; background: #eef2ff; border: 1px solid #dce3ff; }
+.tip h2 { margin-top: 0; color: #354a9b; }
+.sidebar h2 { margin-top: 0; }
+.sidebar ul { padding-left: 1.2rem; line-height: 2.2; }
+.sidebar a { color: #354a9b; overflow-wrap: anywhere; }
+.sidebar-note { margin-top: 1.5rem; padding: 1rem; border-left: 3px solid #d65a31; background: #fff2e9; }
+footer { padding: 1.25rem; background: #1f3150; color: white; text-align: center; }
+@media (max-width: 750px) { .site-header { flex-direction: column; } nav { flex-wrap: wrap; justify-content: center; } .layout { grid-template-columns: 1fr; } .article-cards { flex-direction: column; } }

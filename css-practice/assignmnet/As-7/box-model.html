@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="box-model.css">
+</head>
+<body>
+  <header><h1>CSS Box Model</h1><p>Every element is a box made from four layers.</p></header>
+  <main class="model-layout">
+    <section class="model-demo" aria-label="Box model layers">
+      <div class="margin-layer"><span class="layer-label">MARGIN</span>
+        <div class="border-layer"><span class="layer-label">BORDER</span>
+          <div class="padding-layer"><span class="layer-label">PADDING</span>
+            <div class="content-layer">CONTENT<br><small>Text or other elements</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="explanations">
+      <article><h2>Content</h2><p>The innermost area where text, images, or other content appears.</p></article>
+      <article><h2>Padding</h2><p>Space between the content and its border. The padding background is visible.</p></article>
+      <article><h2>Border</h2><p>The line surrounding the padding and content.</p></article>
+      <article><h2>Margin</h2><p>Transparent space outside the border that separates neighbouring elements.</p></article>
+    </section>
+    <section class="sizing-demo">
+      <article><h2>content-box</h2><div class="measure content-box">Width: 220px + padding + border</div><p>Default sizing adds padding and border to the declared width.</p></article>
+      <article><h2>border-box</h2><div class="measure border-box">Total width: 220px</div><p>With border-box, the declared width includes padding and border.</p></article>
+    </section>
+  </main>
+  <footer>Tip: box-sizing: border-box makes sizing easier to manage.</footer>
+</body>
+</html>

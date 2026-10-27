@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; display: flex; flex-direction: column; background: #f4f7fb; color: #1f2937; font-family: Arial, sans-serif; line-height: 1.6; }
+header, footer { padding: 1.4rem; text-align: center; background: #203a5f; color: white; }
+header h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); }
+.examples { flex: 1; display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 1.25rem; padding: 2.5rem 1.25rem; }
+.example { flex: 1 1 220px; max-width: 300px; padding: 1.4rem; border: 1px solid #dce3ed; border-radius: 12px; background: white; box-shadow: 0 6px 18px rgba(20,35,60,.07); }
+.example h2 { margin-top: 0; color: #3f51b5; }
+.demo-link { display: inline-block; padding: .6rem; color: #254e9b; border-radius: 5px; }
+.demo-link:hover { background: #e0eaff; color: #172554; }
+button { padding: .7rem .9rem; border: 0; border-radius: 7px; background: #4f46e5; color: white; cursor: pointer; transition: background .2s ease, transform .2s ease; }
+.focus-button:focus { outline: 3px solid #a5b4fc; outline-offset: 3px; background: #3730a3; }
+.active-button:active { background: #c2410c; transform: scale(.94); }
+.sample-list { padding-left: 1.4rem; }
+.sample-list li { padding: .35rem .5rem; border-radius: 4px; }
+.sample-list li:nth-child(odd) { background: #eaf2ff; }
+.sample-list li:nth-child(even) { color: #7c2d12; }
+footer { margin-top: auto; }

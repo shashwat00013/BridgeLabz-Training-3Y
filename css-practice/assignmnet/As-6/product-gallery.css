@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 3rem 1.25rem; background: #f4f6fa; color: #202b3c; font-family: Arial, sans-serif; }
+.page { max-width: 1200px; margin: auto; }
+header { text-align: center; margin-bottom: 2.5rem; }
+.eyebrow { color: #6255c7; font-size: .8rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+h1 { margin: .4rem 0; font-size: clamp(2rem, 5vw, 3rem); }
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; align-items: stretch; }
+.product { min-height: 280px; display: flex; flex-direction: column; padding: 1rem; border: 1px solid #e1e5ed; border-radius: 14px; background: white; box-shadow: 0 5px 16px rgba(20,35,60,.07); transition: transform .3s ease, box-shadow .3s ease; }
+.product:hover { transform: scale(1.05); box-shadow: 0 12px 25px rgba(20,35,60,.14); }
+.product-art { flex: 1; min-height: 145px; display: grid; place-items: center; border-radius: 10px; font-size: 4rem; }
+.art-one { background: #e6e9ff; } .art-two { background: #e2f3f1; } .art-three { background: #ffecd9; } .art-four { background: #f8e3e8; }
+.art-five { background: #e2eefa; } .art-six { background: #fff2c9; } .art-seven { background: #e5f0dc; } .art-eight { background: #eee5fa; }
+.product h2 { margin: 1rem 0 .2rem; font-size: 1.05rem; }
+.price { margin: 0; color: #6255c7; font-weight: 800; }
+@media (max-width: 900px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .product-grid { grid-template-columns: 1fr; } }

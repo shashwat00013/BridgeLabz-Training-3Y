@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: #f4f7fb; color: #1e293b; font-family: Arial, sans-serif; line-height: 1.7; }
+.hero { padding: 2.5rem 1rem; text-align: center; color: white; background: linear-gradient(120deg, #14213d, #4361ee); }
+.hero h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); }
+.navbar { display: flex; justify-content: center; align-items: center; gap: .5rem; padding: .75rem 1rem; background: #1e293b; }
+.navbar a { padding: .8rem 1.2rem; border: 1px solid transparent; border-radius: 7px; color: white; text-decoration: none; transition: all .3s ease; }
+.navbar a:hover { border-color: #93c5fd; background: #334e7d; transform: translateY(-2px); }
+.navbar a.active { border-color: #f6bd60; background: #f6bd60; color: #1e293b; font-weight: 800; box-shadow: inset 0 -3px 0 #d97706; }
+main { flex: 1; width: min(850px, 90%); margin: 1.5rem auto 3rem; }
+main section { margin: 1rem 0; padding: 1.25rem 1.5rem; border: 1px solid #e0e6ef; border-radius: 10px; background: white; }
+main h2 { margin-top: 0; color: #344b9b; }
+footer { margin-top: auto; padding: 1.25rem; background: #1e293b; color: white; text-align: center; }
+@media (max-width: 700px) { .navbar { flex-direction: column; align-items: stretch; } .navbar a { text-align: center; } }
