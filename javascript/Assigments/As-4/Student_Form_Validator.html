@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Form Validator</title>
+  <link rel="stylesheet" href="Student_Form_Validator.css" />
+</head>
+<body>
+  <form id="studentForm" novalidate>
+    <h2>Student Registration</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" />
+    <small class="error"></small>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" />
+    <small class="error"></small>
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" />
+    <small class="error"></small>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" />
+    <small class="error"></small>
+
+    <button type="submit">Register</button>
+    <p id="result"></p>
+  </form>
+  <script src="Student_Form_Validator.js"></script>
+</body>
+</html>

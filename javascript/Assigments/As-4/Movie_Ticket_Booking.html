@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="Movie_Ticket_Booking.css" />
+</head>
+<body>
+  <form id="bookingForm" novalidate>
+    <h2>🎬 Movie Ticket Booking</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" />
+    <small class="error"></small>
+
+    <label for="email">Email</label>
+    <input type="text" id="email" />
+    <small class="error"></small>
+
+    <label for="seats">Seats (1-10)</label>
+    <input type="text" id="seats" />
+    <small class="error"></small>
+
+    <button type="submit">Book Ticket</button>
+  </form>
+
+  <div id="ticket"></div>
+  <script src="Movie_Ticket_Booking.js"></script>
+</body>
+</html>

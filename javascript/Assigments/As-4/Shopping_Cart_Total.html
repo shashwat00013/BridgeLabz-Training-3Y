@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shopping Cart Total</title>
+  <link rel="stylesheet" href="Shopping_Cart_Total.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🛒 Shopping Cart</h2>
+
+    <form id="itemForm">
+      <input type="text" id="itemName" placeholder="Item name" required />
+      <input type="number" id="itemPrice" placeholder="Price" min="1" required />
+      <input type="number" id="itemQty" placeholder="Qty" min="1" required />
+      <button type="submit">Add Item</button>
+    </form>
+
+    <table>
+      <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Subtotal</th></tr></thead>
+      <tbody id="cartBody"></tbody>
+    </table>
+
+    <div class="coupon">
+      <input type="text" id="couponInput" placeholder="Coupon (SAVE20 / DISC10)" />
+      <button id="applyCoupon">Apply</button>
+    </div>
+    <p id="couponMsg"></p>
+
+    <p>Total: ₹<span id="total">0</span></p>
+    <p>Discount: <span id="discount">0</span>%</p>
+    <h3>Final Total: ₹<span id="finalTotal">0</span></h3>
+  </div>
+  <script src="Shopping_Cart_Total.js"></script>
+</body>
+</html>
