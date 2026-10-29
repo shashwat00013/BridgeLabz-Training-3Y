@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; margin: 0; min-height: 100vh; padding: 30px; transition: background .2s, color .2s; }
+.container { max-width: 650px; margin: 50px auto; padding: 28px; border-radius: 12px; background: var(--panel); }
+body[data-theme="light"] { --page: #f4f6f8; --panel: white; --text: #172033; --button: #2563eb; background: var(--page); color: var(--text); }
+body[data-theme="dark"] { --page: #15171c; --panel: #252932; --text: #f5f5f5; --button: #555b68; background: var(--page); color: var(--text); }
+body[data-theme="blue"] { --page: #dbeafe; --panel: #eff6ff; --text: #12345a; --button: #0369a1; background: var(--page); color: var(--text); }
+button { padding: 10px 18px; border: 0; border-radius: 6px; background: var(--button); color: white; cursor: pointer; margin-right: 6px; }

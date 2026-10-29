@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="Q3_MultiStepForm.css">
+  <script src="Q3_MultiStepForm.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Registration Form</h1>
+    <p id="stepLabel">Step 1 of 3</p>
+    <form id="multiStepForm" novalidate>
+      <section class="step active" data-step="0">
+        <label for="fullName">Name</label>
+        <input id="fullName" name="fullName" type="text" required autocomplete="name">
+        <p class="error" id="nameError"></p>
+      </section>
+      <section class="step" data-step="1" hidden>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+        <p class="error" id="emailError"></p>
+      </section>
+      <section class="step" data-step="2" hidden>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required minlength="6" autocomplete="new-password">
+        <p class="error" id="passwordError"></p>
+      </section>
+      <div class="buttons">
+        <button id="backButton" type="button" disabled>Back</button>
+        <button id="nextButton" type="button">Next</button>
+      </div>
+    </form>
+    <section id="summary" hidden>
+      <h2>Form Summary</h2>
+      <p id="summaryName"></p>
+      <p id="summaryEmail"></p>
+      <p>Password: <span id="summaryPassword"></span></p>
+      <button id="restartButton" type="button">Start Again</button>
+    </section>
+  </main>
+</body>
+</html>

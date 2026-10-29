@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background: #f4f6f8; padding: 30px; }
+.container { max-width: 500px; margin: auto; background: white; padding: 24px; border-radius: 12px; }
+.dropdown { position: relative; width: 240px; }
+button { width: 100%; text-align: left; padding: 11px 14px; border: 1px solid #bbb; background: white; cursor: pointer; }
+#dropdownButton { background: #2563eb; color: white; border-radius: 6px; }
+.options { position: absolute; top: 100%; left: 0; right: 0; z-index: 2; background: white; box-shadow: 0 4px 12px #0002; }
+.options button { border-top: 0; }
+.options button:hover { background: #dbeafe; }

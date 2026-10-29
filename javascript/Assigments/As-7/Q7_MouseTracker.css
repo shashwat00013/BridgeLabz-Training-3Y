@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; background: #f4f6f8; padding: 24px; }
+.container { max-width: 500px; margin: auto; }
+#coordinates { font-weight: bold; }
+#trackingBox { width: 400px; height: 400px; max-width: 100%; background: white; border: 2px solid #334155; position: relative; overflow: hidden; cursor: crosshair; }
+.dot { width: 12px; height: 12px; background: red; border-radius: 50%; position: absolute; transform: translate(-50%, -50%); pointer-events: none; }

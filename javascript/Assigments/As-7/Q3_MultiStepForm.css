@@ -1,0 +1,8 @@
+body { font-family: Arial, sans-serif; background: #f4f6f8; padding: 30px; }
+.container { max-width: 500px; margin: auto; padding: 24px; background: white; border-radius: 12px; }
+label { display: block; margin-bottom: 8px; font-weight: bold; }
+input { width: 100%; box-sizing: border-box; padding: 11px; margin-bottom: 8px; border: 1px solid #bbb; border-radius: 6px; }
+.buttons { display: flex; justify-content: space-between; margin-top: 16px; }
+button { padding: 10px 18px; border: 0; border-radius: 6px; background: #2563eb; color: white; cursor: pointer; }
+button:disabled { background: #aaa; cursor: not-allowed; }
+.error { color: #dc2626; min-height: 18px; }

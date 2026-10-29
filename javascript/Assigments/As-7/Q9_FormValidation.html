@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submit Blocker</title>
+  <link rel="stylesheet" href="Q9_FormValidation.css">
+  <script src="Q9_FormValidation.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Registration Form</h1>
+    <form id="registrationForm" novalidate>
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" autocomplete="name">
+      <small class="error" id="nameError"></small>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="text" autocomplete="email">
+      <small class="error" id="emailError"></small>
+
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="new-password">
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="successMessage" role="status" hidden>Form Submitted Successfully</p>
+  </main>
+</body>
+</html>
